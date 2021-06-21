@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <script src="https://kit.fontawesome.com/70e9813e0c.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static "css/style.css" %}">
+
+    <title></title>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">SLP</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+          <li class="nav-item">
+            <a class="nav-link" href="/about">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/contact">Contact Us</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Code Editors
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="/cc">C/C++</a></li>
+              <li><a class="dropdown-item" href="/index">Python</a></li>
+              <li><a class="dropdown-item" href="/cj">Java</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="/htcss">HTML</a></li>
+              <li><a class="dropdown-item" href="/texttohtml">Text to HTML</a></li>
+
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="/python">Python</a></li>
+              <li><a class="dropdown-item" href="/java">Java</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="/android">Android Development</a></li>
+              <li><a class="dropdown-item" href="/web">Web Development</a></li>
+              <li><a class="dropdown-item" href="/prog">Competitive Programming</a></li>
+            </ul>
+          </li>
+
+
+        </ul>
+
+
+        <button class="btn btn-danger shadow" type="button"><a href="#">Quiz Portal</a></button>
+      </div>
+    </div>
+    </nav>
+
+
+
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static "img/pic2.jpg" %}" alt="">
+      <div class="carousel-caption d-none d-md-block">
+        <button class = "button btn btn-danger" type="button" name="button">Learn</button>
+        <button class = "button btn btn-warning" type="button" name="button">Code</button>&nbsp;&nbsp;
+        <button class = "button btn btn-success" type="button" name="button">Quiz</button>
+        <p>Learn programming in trending languages</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://source.unsplash.com/1600x500/?Website" alt="">
+      <div class="carousel-caption d-none d-md-block">
+        <button class = "button btn btn-danger" type="button" name="button">Learn</button>&nbsp;&nbsp;
+        <button class = "button btn btn-warning" type="button" name="button">Code</button>&nbsp;&nbsp;
+        <button class = "button btn btn-success" type="button" name="button">Quiz</button>
+        <p>Code and test your programming skills</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://source.unsplash.com/1600x500/?AI,ML,Hacking" alt="">
+      <div class="carousel-caption d-none d-md-block">
+        <button class = "button btn btn-danger" type="button" name="button">Learn</button>&nbsp;&nbsp;
+        <button class = "button btn btn-warning" type="button" name="button">Code</button>&nbsp;&nbsp;
+        <button class = "button btn btn-success" type="button" name="button">Quiz</button>
+        <p>Test Your Understanding with live quizes</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+   </div>
+
+  <div class="container my-5">
+    <div class="row mb-2">
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary">Programming</strong>
+              <h3 class="mb-0">Android Development</h3>
+              <div class="mb-1 text-muted">Nov 12</div>
+              <p class="card-text mb-auto">Android Development using Java and Kotlin languages is really facinating!!</p>
+              <a href="/android" class="stretched-link">Continue Learning</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img class = "bd-placeholder-img" width="200" height="250" src="https://source.unsplash.com/1600x900/?Android" alt="">
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-success">Web Development</strong>
+              <h3 class="mb-0">Learn to code in HTML,CSS,JS</h3>
+              <div class="mb-1 text-muted">Nov 11</div>
+              <p class="mb-auto">Building your own website is quite easy</p>
+              <a href="/web" class="stretched-link">Continue reading</a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img class = "bd-placeholder-img" width="200" height="250" src="https://source.unsplash.com/1600x900/?gadgets" alt="">
+
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <div class="bg-dark text-secondary px-1 py-2 text-center">
+  <div class="py-5">
+    <h1 class="display-5 fw-bold text-white">&copy STUDENT LEARNING PORTAL {{h}}</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="fs-5 mb-4">Learn with us the latest in field of web development, data science and android development</p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        <i class="bs fab fa-facebook-square fa-5x"></i>
+        <i class="fab fa-instagram-square fa-5x"></i>
+        <i class="fab fa-twitter-square fa-5x"></i>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+  </body>
+</html>
